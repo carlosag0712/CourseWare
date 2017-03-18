@@ -17,11 +17,12 @@ public class LoginController
 {
   UserRepository userRepo;
   
-  @RequestMapping(value="login", method=RequestMethod.GET)
-  public String login ()
-  {
-    return "login";  
-  }
+   @RequestMapping(value ="/login", method = RequestMethod.GET)
+    public String login()
+    {
+
+        return "login";
+    }
   
   @RequestMapping(value="register", method=RequestMethod.GET)
   public String register (ModelMap model)
